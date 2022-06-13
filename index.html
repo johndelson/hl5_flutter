@@ -48,7 +48,7 @@
 
 
   <script>
-    var serviceWorkerVersion = '121200044';
+    var serviceWorkerVersion = '2999558813';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
@@ -111,5 +111,15 @@
       loadMainDartJs();
     }
   </script>
+
+  <script type="text/javascript">
+    let useHtml = // ...
+    if(useHtml) {
+      window.flutterWebRenderer = "html";
+    } else {
+      window.flutterWebRenderer = "canvaskit";
+    }
+  </script>
+
 </body>
 </html>
